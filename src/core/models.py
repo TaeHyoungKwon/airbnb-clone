@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+
+class TimeStampedModel(models.Model):
+    created_at = models.DateField()
+    updated_at = models.DateField()
+
+    class Meta:
+        abstract = True
