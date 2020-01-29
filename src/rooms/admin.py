@@ -49,7 +49,7 @@ class RoomAdmin(admin.ModelAdmin):
 
     list_filter = (
         "instant_book",
-        "host__superhost",
+        "host",
         "room_type",
         "amenities",
         "facilities",
